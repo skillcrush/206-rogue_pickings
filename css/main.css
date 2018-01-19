@@ -1,30 +1,35 @@
 body {
-	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: 500;
 }
 
 .container{
-	max-width: 1200px; 
-	margin: 0 auto; 
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 22px;
 }
 
-h1, 
-h3, 
+h1,
+h3,
 h4 {
-	color: black; 
-	text-transform: uppercase; 
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 h1 {
-	font-size: 30px; 
-	text-align: left; 
-	width: auto; 
-	float: left; 
-	padding: 15px 0;
+	font-size: 30px;
+	text-align: left;
+	width: auto;
+	float: left;
+	margin: 0;
+	padding: 38px 0;
 }
 
 h3 {
-	font-size: 18px; 
-	text-align: center; 
+	font-size: 18px;
+	text-align: center;
 	padding: 15px;
 }
 
@@ -33,22 +38,20 @@ h4 {
 }
 
 .main-title h3 {
-	text-align: left; 
-	padding: 5px 0; 
-	text-transform: uppercase; 
-	color: #77a466; 
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
 }
 
 p {
-	padding: 0 30px; 
-	line-height: 21px; 
+	padding: 0 30px;
+	line-height: 21px;
 	font-size: 14px;
 }
 
-/*The widths are in a percentage!*/
 header {
-	height: 110px; 
-	border-bottom: 3px solid #77a466; 
+	height: 110px;
+	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 }
 
@@ -57,15 +60,20 @@ header span {
 }
 
 header nav {
-	float: right; 
-	padding: 45px 0;
+	float: right;
+	padding: 47px 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
 }
 
 header nav ul li {
-	text-transform: uppercase; 
-	font-weight: bold; 
-	font-size: 14px; 
-	padding: 0 10px; 
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 10px;
 	display: inline;
 }
 
@@ -74,14 +82,14 @@ header nav ul li a{
 	color:#77a466;
 }
 
-.top-section, 
+.top-section,
 .bottom-section {
-	margin: 0 auto; 
+	margin: 0 auto;
 	clear: both;
 }
 
 .main-image {
-	height: auto; 
+	height: auto;
 	float: left;
 }
 
@@ -90,22 +98,22 @@ header nav ul li a{
 }
 
 .main-title {
-	height: auto; 
+	height: auto;
 	float: left;
 }
 
 .main-title p {
-	padding: 0; 
-	line-height: 25px; 
+	padding: 0;
+	line-height: 25px;
 	font-size: 16px;
 }
 
-.section-one, 
-.section-two, 
+.section-one,
+.section-two,
 .section-three {
-	width: 399px; 
-	height: auto; 
-	float: left; 
+	width: 399px;
+	height: auto;
+	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -118,43 +126,44 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two h4, 
+.section-two h4,
 .section-three h4 {
 	padding: 10px 30px;
 }
 
 .menu {
-	list-style: none; 
+	list-style: none;
 	padding: 0;
 }
 
 .menu li {
-	padding: 10px 0; 
+	padding: 10px 0;
 	color:#77a466;
 }
 
 .reviews {
-	color: #333; 
-	line-height: 21px; 
+	color: #333;
+	line-height: 21px;
 	font-size: 16px;
 }
 
 .address {
-	font-size: 16px; 
+	font-size: 16px;
 	line-height: 24px;
 }
 
 footer {
-	height: 50px; 
-	border-top: 3px solid #eee; 
-	margin: 0 auto; 
-	clear: both; 
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
 	text-align: center;
 }
 
 footer span {
-	font-family: "Wisdom Script", script; 
-	text-transform: lowercase; 
-	color: #77a466; 
+	font-family: 'Wisdom Script', 'Dancing Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
 	font-size: 14px;
+	font-weight: 400;
 }
