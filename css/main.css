@@ -1,13 +1,15 @@
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-weight: 500;
+}
+
+@font-face{																				/* not supplied with this download */
+	font-family: 'Wisdom Script';
+	src: url('fonts/wisdom-script.otf') format('opentype');
 }
 
 .container{
 	max-width: 1200px;
-	overflow: hidden;
 	margin: 0 auto;
-	padding: 0 22px;
 }
 
 h1,
@@ -45,8 +47,8 @@ h4 {
 
 p {
 	padding: 0 30px;
-	line-height: 21px;
 	font-size: 14px;
+	line-height: 21px;
 }
 
 header {
@@ -104,8 +106,8 @@ header nav ul li a{
 
 .main-title p {
 	padding: 0;
-	line-height: 25px;
 	font-size: 16px;
+	line-height: 25px;
 }
 
 .section-one,
@@ -143,8 +145,8 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	line-height: 21px;
 	font-size: 16px;
+	line-height: 21px;
 }
 
 .address {
@@ -165,5 +167,4 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
-	font-weight: 400;
 }
