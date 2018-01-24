@@ -2,7 +2,7 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-@font-face{																				/* not supplied with this download */
+@font-face{
 	font-family: 'Wisdom Script';
 	src: url('fonts/wisdom-script.otf') format('opentype');
 }
@@ -163,7 +163,7 @@ footer {
 }
 
 footer span {
-	font-family: 'Wisdom Script', 'Dancing Script', cursive;
+	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
