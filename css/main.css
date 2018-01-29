@@ -4,7 +4,7 @@ body {
 
 @font-face{
 	font-family: 'Wisdom Script';
-	src: url('fonts/wisdom-script.otf') format('opentype');
+	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
 .container{
