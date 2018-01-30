@@ -4,14 +4,18 @@ html {
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-weight: 500;
 	font-size: 1em;
+}
+
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
 .container{
 	max-width: 1200px;
 	overflow: hidden;
-	margin: 0 auto 2em;
+	margin: 0 auto;
 	width: 90%;
 }
 
@@ -24,12 +28,12 @@ h4 {
 }
 
 h1 {
-	text-align: center;
 	font-size: 1.875em;
+    text-align: center;
 	width: auto;
 	margin: 0;
 	padding: 1em 0;
-	border-bottom: 3px solid #77a466;
+    border-bottom: 3px solid #77a466;
 }
 
 h3 {
@@ -49,9 +53,8 @@ h4 {
 }
 
 p {
-	padding: 0;
+    font-size: .875em;
 	line-height: 1.5em;
-	font-size: .875em;
 }
 
 header {
@@ -69,8 +72,8 @@ header nav ul {
 }
 
 header nav ul li {
-	text-align: center;
 	text-transform: uppercase;
+    text-align: center;
 	font-weight: 700;
 	font-size: .875em;
 	padding: 1em .625em;
@@ -104,8 +107,8 @@ header nav ul li a{
 
 .main-title p {
 	padding: 0;
+    font-size: 1em;
 	line-height: 1.8em;
-	font-size: 1em;
 }
 
 .section-one,
@@ -115,7 +118,9 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
+.section-one h4,
+.section-two h4,
+.section-three h4 {
 	padding: .625em 0;
 }
 
@@ -131,8 +136,8 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
+    font-size: 1em;
 	line-height: 1.35em;
-	font-size: 1em;
 }
 
 .address {
@@ -149,17 +154,16 @@ footer {
 }
 
 footer span {
-	font-family: 'Wisdom Script', 'Dancing Script', cursive;
+	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
-	font-weight: 400;
 }
 
 @media all and (min-width:768px) {
     /* Tablet styles here */
 	p {
-		padding: 0 1.875em;
+		padding: 0 1.5em;
 	}
 
 	.section-one,
@@ -196,7 +200,7 @@ footer span {
 	header nav {
 		text-align: right;
 		float: right;
-		padding: 2.9375em 0;
+		padding: 2.875em 0;
 	}
 
 	header nav ul {
