@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
 html {
     font-size: 16px;
 }
@@ -5,11 +10,6 @@ html {
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
-}
-
-@font-face{
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
 .container{
@@ -20,36 +20,24 @@ body {
 }
 
 h1,
+h2,
 h3,
 h4 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
 }
-
 h1 {
 	font-size: 1.875em;
-    text-align: center;
-	width: auto;
-	margin: 0;
-	padding: 1em 0;
-    border-bottom: 3px solid #77a466;
 }
-
+h2 {
+    font-size: 1.5em;
+}
 h3 {
 	font-size: 1.125em;
-	text-align: center;
-	padding: .9375em;
 }
-
 h4 {
 	font-size: .75em;
-}
-
-.main-title h3 {
-	text-align: left;
-	padding: .3125em 0;
-	color: #77a466;
 }
 
 p {
@@ -62,6 +50,13 @@ header {
 	margin: 0 auto;
 }
 
+header h1 {
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 3px solid #77a466;
+}
 header span {
 	color: #77a466;
 }
@@ -78,7 +73,6 @@ header nav ul li {
 	font-size: .875em;
 	padding: 1em .625em;
 }
-
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -94,7 +88,6 @@ header nav ul li a{
 	height: auto;
 	float: left;
 }
-
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -103,8 +96,13 @@ header nav ul li a{
 .main-title {
 	height: auto;
 	float: left;
+    font-size: 1em;
 }
-
+.main-title h3 {
+	text-align: left;
+	padding: .3125em 0;
+	color: #77a466;
+}
 .main-title p {
 	padding: 0;
     font-size: 1em;
@@ -128,7 +126,6 @@ header nav ul li a{
 	list-style: none;
 	padding: 0;
 }
-
 .menu li {
 	padding: .625em 0;
 	color:#77a466;
@@ -152,7 +149,6 @@ footer {
 	clear: both;
 	text-align: center;
 }
-
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
@@ -172,7 +168,6 @@ footer span {
 		width: 33%;
 		float: left;
 	}
-
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
@@ -190,7 +185,7 @@ footer span {
 		height: 6.875em;
 	}
 
-	h1 {
+	header h1 {
 		text-align: left;
 		float: left;
 		padding: 1.25em 0;
@@ -202,11 +197,9 @@ footer span {
 		float: right;
 		padding: 2.875em 0;
 	}
-
 	header nav ul {
 		margin: 0;
 	}
-
 	header nav ul li {
 		padding: 0 .625em;
 		display: inline;
