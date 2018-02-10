@@ -10,6 +10,7 @@ body {
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 90%;
 }
 
 h1,
@@ -51,6 +52,7 @@ p {
 	line-height: 21px;
 }
 
+/*The widths are in a percentage!*/
 header {
 	height: 110px;
 	border-bottom: 3px solid #77a466;
@@ -84,6 +86,7 @@ header nav ul li a{
 	color:#77a466;
 }
 
+/*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
 	margin: 0 auto;
@@ -96,6 +99,7 @@ header nav ul li a{
 }
 
 .main-image img {
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
@@ -113,7 +117,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 399px;
+	width: 33%;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
@@ -154,6 +158,7 @@ header nav ul li a{
 	line-height: 24px;
 }
 
+/*The widths are in a percentage!*/
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
