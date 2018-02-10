@@ -1,10 +1,10 @@
-body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-}
-
 @font-face{
 	font-family: 'Wisdom Script';
 	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 .container{
@@ -13,42 +13,30 @@ body {
 }
 
 h1,
+h2,
 h3,
 h4 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
 }
-
 h1 {
 	font-size: 30px;
-	text-align: left;
-	width: auto;
-	float: left;
-	margin: 0;
-	padding: 38px 0;
 }
-
+h2 {
+	font-size: 24px;
+}
 h3 {
 	font-size: 18px;
-	text-align: center;
-	padding: 15px;
 }
-
 h4 {
 	font-size: 12px;
 }
 
-.main-title h3 {
-	text-align: left;
-	padding: 5px 0;
-	color: #77a466;
-}
-
 p {
-	padding: 0 30px;
 	font-size: 14px;
 	line-height: 21px;
+    padding: 0 30px;
 }
 
 header {
@@ -57,7 +45,12 @@ header {
 	margin: 0 auto;
 }
 
-header span {
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 38px 0;
+}
+header h1 span {
 	color: #77a466;
 }
 
@@ -65,12 +58,10 @@ header nav {
 	float: right;
 	padding: 46px 0;
 }
-
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
-
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -78,7 +69,6 @@ header nav ul li {
 	padding: 0 10px;
 	display: inline;
 }
-
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -94,7 +84,6 @@ header nav ul li a{
 	height: auto;
 	float: left;
 }
-
 .main-image img {
 	border-bottom: 3px solid #77a466;
 }
@@ -103,7 +92,11 @@ header nav ul li a{
 	height: auto;
 	float: left;
 }
-
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
 .main-title p {
 	padding: 0;
 	font-size: 16px;
@@ -119,13 +112,13 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
+.section-one h4 {
+	padding: 10px 0;
+}
+
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-}
-
-.section-one h4 {
-	padding: 10px 0;
 }
 
 .section-two h4,
@@ -137,7 +130,6 @@ header nav ul li a{
 	list-style: none;
 	padding: 0;
 }
-
 .menu li {
 	padding: 10px 0;
 	color:#77a466;
@@ -161,7 +153,6 @@ footer {
 	clear: both;
 	text-align: center;
 }
-
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
