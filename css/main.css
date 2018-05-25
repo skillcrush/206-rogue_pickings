@@ -3,13 +3,20 @@
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
 }
 
 .container{
 	max-width: 1200px;
+	overflow: hidden;
 	margin: 0 auto;
+	width: 90%;
 }
 
 h1,
@@ -21,53 +28,50 @@ h4 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 h2 {
-	font-size: 24px;
+    font-size: 1.5em;
 }
 h3 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h4 {
-	font-size: 12px;
+	font-size: .75em;
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
+    font-size: .875em;
+	line-height: 1.5em;
 }
 
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 }
 
 header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 3px solid #77a466;
 }
-header h1 span {
+header span {
 	color: #77a466;
 }
 
-header nav {
-	float: right;
-	padding: 46px 0;
-}
 header nav ul {
-	margin: 0;
+	margin: 1.5em 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
+    text-align: center;
 	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+	font-size: .875em;
+	padding: 1em .625em;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -85,45 +89,37 @@ header nav ul li a{
 	float: left;
 }
 .main-image img {
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
 	height: auto;
 	float: left;
+    font-size: 1em;
 }
 .main-title h3 {
 	text-align: left;
-	padding: 5px 0;
+	padding: .3125em 0;
 	color: #77a466;
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+    font-size: 1em;
+	line-height: 1.8em;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 399px;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
+.section-one h4,
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: .625em 0;
 }
 
 .menu {
@@ -131,23 +127,23 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+	padding: .625em 0;
 	color:#77a466;
 }
 
 .reviews {
 	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+    font-size: 1em;
+	line-height: 1.35em;
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 footer {
-	height: 50px;
+	height: 3.125em;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	clear: both;
@@ -157,5 +153,55 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+	p {
+		padding: 0 1.5em;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		float: left;
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: .625em 1.875em;
+	}
+}
+
+@media all and (min-width:940px) {
+    /* Desktop styles here */
+	header {
+		height: 6.875em;
+	}
+
+	header h1 {
+		text-align: left;
+		float: left;
+		padding: 1.25em 0;
+		border-bottom: none;
+	}
+
+	header nav {
+		text-align: right;
+		float: right;
+		padding: 2.875em 0;
+	}
+	header nav ul {
+		margin: 0;
+	}
+	header nav ul li {
+		padding: 0 .625em;
+		display: inline;
+	}
 }
