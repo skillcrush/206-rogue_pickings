@@ -4,19 +4,18 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 16px;		/* setting up base text size */
 }
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 1em;		/* setting up base text size */
 }
 
 .container{
-	max-width: 1200px;
-	overflow: hidden;
+	max-width: 1200px;		/* more responsive than fixed width of starter code */
 	margin: 0 auto;
-	width: 90%;
+	width: 90%;			/* provides padding to match mobile and tablet design */
 }
 
 h1,
@@ -42,36 +41,47 @@ h4 {
 
 p {
     font-size: .875em;
-	line-height: 1.5em;
+	line-height: 1.313em;
+	padding: 0 1.875em;
 }
 
 header {
+	/*overflow: auto;			/* this is one solution to get the border under header elements; using clearfix properties (below) is another */
+	content: "";			/* using these three clearfix properties (https://css-tricks.com/snippets/css/clear-fix/) plus width is another solution to get the border under header elements */
+	display: table;
+	clear: both;
+	width: 100%;			/* necessary to avoid collapsed size when using display: table for clearfix route */
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
+	font-size: .875em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets header li be 1em */
 }
 
 header h1 {
-    text-align: center;
     width: auto;
     margin: 0;
-    padding: 1em 0;
+    padding: 1.267em 0 .467em;			/* takes into account font size of the h1 */
     border-bottom: 3px solid #77a466;
+	font-size: 2.143em;			/* want this to be 30px; takes into account base font size of module */
+	text-align: center;
 }
 header span {
 	color: #77a466;
 }
 
+header nav {
+	padding: 1em 0;			/* takes into account font size of the li */
+    text-align: center;
+}
 header nav ul {
-	margin: 1.5em 0;
+	margin: 0;
 	padding: 0;
 }
-
 header nav ul li {
 	text-transform: uppercase;
-    text-align: center;
 	font-weight: 700;
-	font-size: .875em;
-	padding: 1em .625em;
+	font-size: 1em;			/* want this to be 14px and be able to set as 1em per the lesson */
+	padding: 1em .714em;			/* takes into account font size of the li */
+	list-style: none;			/* need to add since not initially inline */
 }
 header nav ul li a{
 	text-decoration: none;
@@ -84,124 +94,137 @@ header nav ul li a{
 	clear: both;
 }
 
-.main-image {
+.top-section .main-image {
 	height: auto;
 	float: left;
 }
-.main-image img {
+.top-section .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
+.top-section .main-title {
 	height: auto;
 	float: left;
-    font-size: 1em;
+    font-size: 1em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets p be 1em */
 }
-.main-title h3 {
+.top-section .main-title h3 {
+	font-size: 1.125em;			/* takes into account base font size of module */
 	text-align: left;
-	padding: .3125em 0;
+	padding: .278em 0;			/* takes into account the font size of the h3 */
 	color: #77a466;
 }
-.main-title p {
+.top-section .main-title p {
 	padding: 0;
-    font-size: 1em;
-	line-height: 1.8em;
+    font-size: 1em;			/* want this to be 16px and be able to set as 1em per the lesson */
+	line-height: 1.563em;			/* takes into account the font size of the p */
 }
 
-.section-one,
-.section-two,
-.section-three {
+.bottom-section .section-one,
+.bottom-section .section-two,
+.bottom-section .section-three {
 	height: auto;
 	border-top: 1px solid #eee;
+	font-size: 1em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets p and li be 1em */
 }
 
-.section-one h4,
-.section-two h4,
-.section-three h4 {
-	padding: .625em 0;
+.bottom-section .section-one h4,
+.bottom-section .section-two h4,
+.bottom-section .section-three h4 {
+	padding: .833em 0;			/* takes into account the font size of the h4 */
+	font-size: .75em;			/* takes into account base font size of module */
 }
 
-.menu {
+.bottom-section .section-one .menu {
 	list-style: none;
 	padding: 0;
 }
-.menu li {
-	padding: .625em 0;
+.bottom-section .section-one .menu li {
+	padding: .625em 0;			/* takes into account the font size of the li */
 	color:#77a466;
+	font-size: 1em;				/* want this to be 16px and be able to set as 1em per the lesson */
 }
 
-.reviews {
+.bottom-section .section-two .reviews {
 	color: #333;
-    font-size: 1em;
-	line-height: 1.35em;
+    font-size: 1em;				/* want this to be 16px and be able to set as 1em per the lesson */
+	line-height: 1.313em;			/* takes into account the font size of the p */
 }
 
-.address {
-	font-size: 1em;
-	line-height: 1.5em;
+.bottom-section .section-three .address {
+	font-size: 1em;				/* want this to be 16px and be able to set as 1em per the lesson */
+	line-height: 1.5em;			/* takes into account the font size of the p */
+}
+
+.bottom-section .section-two p,
+.bottom-section .section-three p {
+	padding: 0;
 }
 
 footer {
-	height: 3.125em;
+	height: 4.225em;			/* takes into account base font size of module */
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
+	font-size: .75em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets h4 be 1em */
+}
+footer h4 {
+	font-size: 1em;				/* want this to be 12px and be able to set as 1em per the lesson */
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: .875em;
+	font-size: 1.167em;			/* takes into account base font size of module */
 }
 
 @media all and (min-width:768px) {
     /* Tablet styles here */
-	p {
-		padding: 0 1.5em;
-	}
-
-	.section-one,
-	.section-two,
-	.section-three {
+	.bottom-section .section-one,
+	.bottom-section .section-two,
+	.bottom-section .section-three {
 		width: 33%;
 		float: left;
 	}
-	.section-two {
+	.bottom-section .section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 	}
+	.bottom-section .section-two h4,
+	.bottom-section .section-three h4 {
+		padding: .833em 2.5em;			/* takes into account the font size of the h4 */
+	}
 
-	.section-two h4,
-	.section-three h4 {
-		padding: .625em 1.875em;
+	.bottom-section .section-one .menu {
+		padding-right: 1.875em;			/* takes into account the font size of the li */
+	}
+	.bottom-section .section-two p,
+	.bottom-section .section-three p {
+		padding: 0 1.875em;			/* takes into account the font size of the p */
 	}
 }
 
 @media all and (min-width:940px) {
     /* Desktop styles here */
-	header {
-		height: 6.875em;
+	.container{
+		width: 100%;		/* no padding at max-width 1200px to match desktop design */
 	}
 
 	header h1 {
-		text-align: left;
 		float: left;
-		padding: 1.25em 0;
+		padding: 1.267em 0;			/* takes into account font size of the h1 */
 		border-bottom: none;
+		text-align: left;
 	}
 
 	header nav {
-		text-align: right;
 		float: right;
-		padding: 2.875em 0;
-	}
-	header nav ul {
-		margin: 0;
+		padding: 3.286em 0;			/* takes into account font size of the li */
+		text-align: right;
 	}
 	header nav ul li {
-		padding: 0 .625em;
 		display: inline;
+		padding: 0 .714em;			/* takes into account font size of the li */
 	}
 }
