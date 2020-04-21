@@ -1,8 +1,3 @@
-@font-face{
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
-}
-
 html {
     font-size: 16px;		/* setting up base text size */
 }
@@ -173,7 +168,7 @@ footer h4 {
 	font-size: 1em;				/* want this to be 12px and be able to set as 1em per the lesson */
 }
 footer span {
-	font-family: 'Wisdom Script', cursive;
+	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 1.167em;			/* takes into account base font size of module */
