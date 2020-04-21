@@ -1,10 +1,6 @@
 html{
     font-size: 16px;
 }
-@font-face {
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
-}
 
 body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -153,7 +149,7 @@ footer {
 }
 
 footer span {
-	font-family: 'Wisdom Script', cursive;
+	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
