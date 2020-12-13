@@ -12,11 +12,10 @@ body {
 	margin: 0 auto;
 	width: 90%;			/* provides padding to match mobile and tablet design */
 }
-
+/****** removed h4 *******/
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -24,13 +23,12 @@ h4 {
 h1 {
 	font-size: 1.875em;
 }
+/****** change h3 to h2 ******/
 h2 {
-    font-size: 1.5em;
-}
-h3 {
 	font-size: 1.125em;
 }
-h4 {
+/****** change h4 to h3 ******/
+h3 {
 	font-size: .75em;
 }
 
@@ -103,7 +101,8 @@ header nav ul li a{
 	float: left;
     font-size: 1em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets p be 1em */
 }
-.top-section .main-title h3 {
+/********* changed h3 to h2 **********/
+.top-section .main-title h2 {
 	font-size: 1.125em;			/* takes into account base font size of module */
 	text-align: left;
 	padding: .278em 0;			/* takes into account the font size of the h3 */
@@ -123,10 +122,11 @@ header nav ul li a{
 	font-size: 1em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets p and li be 1em */
 }
 
-.bottom-section .section-one h4,
-.bottom-section .section-two h4,
-.bottom-section .section-three h4 {
-	padding: .833em 0;			/* takes into account the font size of the h4 */
+/********* changed h4 to h3 **********/
+.bottom-section .section-one h3,
+.bottom-section .section-two h3,
+.bottom-section .section-three h3 {
+	padding: .833em 0;			/* takes into account the font size of the h3 */
 	font-size: .75em;			/* takes into account base font size of module */
 }
 
@@ -162,9 +162,11 @@ footer {
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
-	font-size: .75em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets h4 be 1em */
+	font-size: .75em;			/* html font size is 16px; we want a child element of this module to be 1em per the lesson; this base font size lets h3 be 1em */
 }
-footer h4 {
+
+/********* changed h4 to h3 **********/
+footer h3 {
 	font-size: 1em;				/* want this to be 12px and be able to set as 1em per the lesson */
 }
 footer span {
@@ -186,9 +188,11 @@ footer span {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 	}
-	.bottom-section .section-two h4,
-	.bottom-section .section-three h4 {
-		padding: .833em 2.5em;			/* takes into account the font size of the h4 */
+
+	/********* changed h4 to h3 **********/
+	.bottom-section .section-two h3,
+	.bottom-section .section-three h3 {
+		padding: .833em 2.5em;			/* takes into account the font size of the h3 */
 	}
 
 	.bottom-section .section-one .menu {
