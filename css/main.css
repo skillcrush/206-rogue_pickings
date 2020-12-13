@@ -21,11 +21,14 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+h3 {
+	font-size: .75em;
 }
 
 p {
@@ -96,7 +99,7 @@ header nav ul li a {
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title h3 {
+.main-title h2 {
 	text-align: left;
 	padding: 5px 0;
     color: #77a466;
