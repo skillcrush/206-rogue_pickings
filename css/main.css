@@ -9,8 +9,7 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -19,12 +18,9 @@ h1 {
 	font-size: 30px;
 }
 h2 {
-	font-size: 24px;
-}
-h3 {
 	font-size: 18px;
 }
-h4 {
+h3 {
 	font-size: 12px;
 }
 
@@ -87,7 +83,7 @@ header nav ul li a{
 	height: auto;
 	float: left;
 }
-.main-title h3 {
+.main-title h2 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
@@ -107,7 +103,7 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
+.section-one h3 {
 	padding: 10px 0;
 }
 
@@ -116,8 +112,8 @@ header nav ul li a{
 	border-right: 1px solid #eee;
 }
 
-.section-two h4,
-.section-three h4 {
+.section-two h3,
+.section-three h3 {
 	padding: 10px 30px;
 }
 
