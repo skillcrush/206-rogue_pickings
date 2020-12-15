@@ -21,11 +21,19 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: .75em;
 }
 
 p {
@@ -49,7 +57,6 @@ header {
 }
 
 header h1 {
-    font-size: 1.875em;
 	margin: 0;
     padding: 38px 20px 20px 20px; 
     border-bottom: 3px solid #77a466; 
@@ -96,11 +103,10 @@ header nav ul li a {
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title h3 {
+.main-title h2 {
 	text-align: left;
 	padding: 5px 0;
     color: #77a466;
-    font-size: 1.125em;
 }
 
 .main-title p {
