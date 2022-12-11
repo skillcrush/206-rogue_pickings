@@ -1,39 +1,49 @@
+/******** GLOBAL STYLES ********/
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #000000;
 }
 
-.container{
+/* The width property has been changed to max-width */
+.content-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
 h1,
 h2,
-h3 {
-	color: black;
+h3,
+h4 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
 h1 {
 	font-size: 30px;
 }
+
 h2 {
-	font-size: 18px;
+	font-size: 24px;
 }
+
 h3 {
+	font-size: 20px;
+}
+
+h4 {
 	font-size: 12px;
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
+	line-height: 36px;
 }
 
-/*The widths are in a percentage!*/
+/******** HEADER STYLES ********/
+/* The widths are in a percentage! */
 header {
 	height: 110px;
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 }
 
@@ -42,115 +52,101 @@ header h1 {
 	margin: 0;
 	padding: 38px 0;
 }
+
 header h1 span {
-	color: #77a466;
+	color: #45610E;
 }
 
 header nav {
 	float: right;
 	padding: 46px 0;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
+	display: inline-block;
 	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
 	padding: 0 10px;
-	display: inline;
 }
-header nav ul li a{
+
+header nav ul li a {
 	text-decoration: none;
-	color:#77a466;
+	color: #45610E;
 }
 
-/*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
-	margin: 0 auto;
-	clear: both;
-}
-
-.main-image {
-	height: auto;
-	float: left;
-}
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+/* The widths are in a percentage! */
 .main-image img {
 	width: 100%;
+	border-top: 3px solid #77A466;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	height: auto;
-	float: left;
-}
+
 .main-title h2 {
-	text-align: left;
+	color: #45610E;
 	padding: 5px 0;
-	color: #77a466;
 }
-.main-title p {
-	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+
+/******** BOTTOM SECTION ********/
+.bottom-section .content-wrapper {
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
+	box-sizing: border-box;
 	float: left;
-	border-top: 1px solid #eee;
+	padding: 0 40px;
 }
 
-.section-one h3 {
-	padding: 10px 0;
+.section-one {
+	width: 29%;
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	width: 42%;
+	border-left: 5px solid #EEE;
+	border-right: 5px solid #EEE;
 }
 
-.section-two h3,
-.section-three h3 {
-	padding: 10px 30px;
+.section-three {
+	width: 29%;
 }
 
-.menu {
+.bottom-section h3 {
+	margin: 30px 0;
+}
+
+.menu-list {
+	padding-left: 0;
 	list-style: none;
-	padding: 0;
-}
-.menu li {
-	padding: 10px 0;
-	color:#77a466;
 }
 
-.reviews {
-	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+.menu-list li {
+	color: #45610E;
+	line-height: 36px;
 }
 
-.address {
-	font-size: 16px;
-	line-height: 24px;
-}
-
-/*The widths are in a percentage!*/
+/******** FOOTER STYLES ********/
+/* The widths are in a percentage! */
 footer {
-	height: 50px;
-	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
 	text-align: center;
+	margin-top: 8px;
 }
+
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
-	color: #77a466;
+	color: #45610E;
 	font-size: 14px;
 }
