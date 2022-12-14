@@ -74,10 +74,10 @@ header nav {
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
 header nav ul li {
-	display: inline-block;
 	font-size: .875rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -167,7 +167,7 @@ footer span {
 }
 
 /******** TABLET MEDIA QUERY ********/
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 
 	/******** BOTTOM SECTION ********/
 	.bottom-section .content-wrapper {
@@ -193,7 +193,7 @@ footer span {
 }
 
 /******** DESKTOP MEDIA QUERY ********/
-@media only screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 
 	/******** GLOBAL STYLES ********/
 	body {
