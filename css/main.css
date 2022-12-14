@@ -96,6 +96,11 @@ header nav ul li a {
 }
 
 /******** BOTTOM SECTION ********/
+.top-section,
+.bottom-section {
+
+}
+
 .bottom-section .content-wrapper {
 	border-top: 5px solid #EEE;
 	border-bottom: 5px solid #EEE;
@@ -134,6 +139,7 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
+	font-size: 16px;
 	line-height: 36px;
 }
 
